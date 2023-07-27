@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2gKCTtP3kfw087TU1tFfrqKw6wAaXhWUHcVbrec9V3ehxnUNzY7dPIhtJMzXlg8CNrAz9NxPyuBds7nlyHMybQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hbarney\\source\\repos\\EpsonConnectSDKCSharp\\Epsonruntest\\Epsonruntest\\Epsonruntest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hbarney\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

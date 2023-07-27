@@ -1,0 +1,12 @@
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\obj\Debug\net7.0\EpsonConnectSDK.csproj.AssemblyReference.cache
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\obj\Debug\net7.0\EpsonConnectSDK.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\obj\Debug\net7.0\EpsonConnectSDK.AssemblyInfoInputs.cache
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\obj\Debug\net7.0\EpsonConnectSDK.AssemblyInfo.cs
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\obj\Debug\net7.0\EpsonConnectSDK.csproj.CoreCompileInputs.cache
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\bin\Debug\net7.0\EpsonConnectSDK.deps.json
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\bin\Debug\net7.0\EpsonConnectSDK.dll
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\bin\Debug\net7.0\EpsonConnectSDK.pdb
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\obj\Debug\net7.0\EpsonConnectSDK.dll
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\obj\Debug\net7.0\refint\EpsonConnectSDK.dll
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\obj\Debug\net7.0\EpsonConnectSDK.pdb
+C:\Users\hbarney\source\repos\MongoDBSync\EpsonConnectSDK\EpsonConnectSDK\obj\Debug\net7.0\ref\EpsonConnectSDK.dll
