@@ -4,10 +4,8 @@ using System.Text;
 
 namespace EpsonConnectSDK
 {
-    //TODO: Add back print settings
     //TODO: Create get device info funcion
     //TODO: Create cancel authentication function
-    //TODO: Document all private functions
     //TODO: Add CreatePrintJob overload that takes 3 strings. 1 for file, 1 for name, 1 for type. This overload will use just default print settings.
 
     public class PrinterMediaSize
@@ -184,6 +182,11 @@ namespace EpsonConnectSDK
             return false;
         }
 
+        /// <summary>
+        /// Gets and returns the specified jobs status.
+        /// </summary>
+        /// <param name="JobID"></param>
+        /// <returns>The HTTP response body as a JSON string</returns>
         public async Task<string> GetJobInfo(string JobID)
         {
             client.DefaultRequestHeaders.Clear();
@@ -194,10 +197,15 @@ namespace EpsonConnectSDK
             return responseBody;
         }
 
+        /// <summary>
+        /// Checks the print capabilities and saves them as objects, can be accessed in code.
+        /// </summary>
+        /// <returns>A bool indicationg success.</returns>
         private async Task<bool> GetPrintCapabilities()
         {
             client.DefaultRequestHeaders.Clear();
             client.DefaultRequestHeaders.Add("Authorization", "Bearer " + _access_token);
+
 
             HttpResponseMessage responseDoc = await client.GetAsync($"https://{_host}/api/1/printing/printers/{_subject_id}/capability/document");
             HttpResponseMessage responsePic = await client.GetAsync($"https://{_host}/api/1/printing/printers/{_subject_id}/capability/photo");
@@ -210,7 +218,10 @@ namespace EpsonConnectSDK
         }
 
 
-
+        /// <summary>
+        /// Checks to see if the access token will expire in the next 2 minutes, if so refresh.
+        /// </summary>
+        /// <returns></returns>
         async private Task<bool> CheckAndRefresh()
         {
             //If experation is within 2 minutes from now, refresh to prevent any errors.
@@ -220,7 +231,11 @@ namespace EpsonConnectSDK
             }
             return true;
         }
-
+        /// <summary>
+        /// Refreshes the current access token
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         async private Task<bool> RefreshToken()
         {
             string idSecret = _clientId + ":" + _clientSecret;
@@ -248,6 +263,12 @@ namespace EpsonConnectSDK
             return true;
         }
 
+        /// <summary>
+        /// Creates a print job on Epson Connect and redys it for printing
+        /// </summary>
+        /// <param name="settings"></param>
+        /// <returns>A string array containing the JobID([0]), which is used to reference the current job, and the upload URI([1]) which is used to upload the file</returns>
+        /// <exception cref="Exception"></exception>
         private async Task<string[]> CreatePrintJob(PrintSettings settings)
         {
             client.DefaultRequestHeaders.Clear();
@@ -271,6 +292,13 @@ namespace EpsonConnectSDK
             return vars;
         }
 
+        /// <summary>
+        /// Uses a filestream to upload the given file using a baseuri given as a response from creating a printjob.
+        /// </summary>
+        /// <param name="filePath">Relitive or full path of the file</param>
+        /// <param name="baseUri">Provided as a response from creating a print job</param>
+        /// <returns>A bool indicating the success of the function</returns>
+        /// <exception cref="Exception"></exception>
         private async Task<bool> UploadPrintFile(string filePath, string baseUri)
         {
             client.DefaultRequestHeaders.Clear();

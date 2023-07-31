@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vN9Ghm/ahUB/oz8xVk727pBXUoeNMjxNyNnPoJXCan5J7wkM8PUxjK4/gmNphP8m6GfiryoO2Z/QZkZPdJjqKA==",
+  "dgSpecHash": "QxChYNrG8ApMrbIanVW+fAzG5ODUFgPeJqa0trD9bhHCgpX8hL3Tg4dceLcM++uy01IIN+aMJh0HT2/djljk2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hbarney\\source\\repos\\MongoDBSync\\EpsonConnectSDK\\EpsonConnectSDK\\EpsonConnectSDK.csproj",
+  "projectFilePath": "C:\\Users\\habar\\OneDrive\\Documents\\GitHub\\EpsonConnectSDKCSharp\\EpsonConnectSDK\\EpsonConnectSDK\\EpsonConnectSDK.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hbarney\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\habar\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
